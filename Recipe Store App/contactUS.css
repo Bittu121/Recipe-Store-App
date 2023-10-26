@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+  }
+  body {
+    background-color: #7A9D54;
+    color: #fff;
+  }
+  
+  header nav {
+    background-color: #0802A3;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  header nav h1 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #F4CE14;
+  }
+  
+  header nav .left {
+    display: flex;
+  }
+  header nav .left ul {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+  }
+  header nav .left a {
+    text-decoration: none;
+  }
+  header nav .left ul li {
+    margin-left: 10px;
+    list-style: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+  }
+  header nav .left ul li a{
+    color: white;
+  }
+  
+  header nav form {
+    display: flex;
+    justify-content: center;
+  }
+  form input[type="text"] {
+    /* flex-grow: 1; */
+    margin-right: 10px;
+  }
+  
+  form input[type="text"],
+  button[type="submit"] {
+    border: none;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  form button[type="submit"] {
+    background-color: #f44336;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  form button[type="submit"]:hover {
+    background-color: #ff5c5c;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 600px) {
+    header nav .left {
+      flex-direction: column;
+    }
+    header nav {
+      flex-direction: column;
+    }
+    header nav form {
+      width: 80%;
+      margin-top: 20px;
+    }
+  }
+
+  /* ContactUs form */
+  h2{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  #contactForm {
+    background-color: cyan;
+    padding-top: 20px;
+    margin-top: 30px;
+    width: fit-content;
+    margin-left: 16px;
+    }
+  
+  .main label{
+    color: black;
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: 500;
+  }
+  input[type=text] {
+    height: 30px;
+  }
+
+  input[type=text], textarea {
+    background-color: #82b74b;
+    border-radius: 5px;
+    margin: auto 0;
+    color: #FFFFFF;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 10px #3e4444;
+    }
+    textarea{
+      resize:vertical;
+    }
+  input[type=submit] {
+    background-color: #260bbd;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-left: 10px;
+    box-shadow: 5px 5px 5px #3e4444;
+    padding: 5px;
+    margin-bottom: 7px;
+  }
+ 
+  /* Start footer  */
+.footer{
+  background-color: #fff;
+  margin-top: 18vh;
+}
+.footer .box-container {
+  border: 0px solid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap:1rem;
+}
+.footer .box-container .box h3{
+  font-size:23px;
+  color: blue;
+  padding: 10px 0;
+  margin-left: 0.5rem
+}
+.footer .box-container .box h3 i{
+  color: green;
+  margin-left: 0.5rem
+}
+.footer .box-container .box p{
+  line-height: 1rem;
+  font-size: 15px;
+  color: black;
+  padding: 0.4rem 0;
+  font-weight: 600;
+  margin-left: 0.5rem
+}
+.footer .box-container .box .share a{
+  height: 2rem;
+  width: 2rem;
+  line-height: 2.5rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  color: black;
+  margin-left: 0.2rem;
+  background: #eee;
+  text-align: center;
+}
+.footer .box-container .box .share a:hover{
+  background-color: green;
+  color: white;
+}
+
+.footer .box-container .box .links{
+  display: block;
+  font-size: 1rem;
+  color: black;
+  padding: 0.4rem 0;
+  font-weight: 600;
+}
+.footer .box-container .box .links i{
+  color: green;
+  padding-right: 0.5rem;
+}
+.footer .box-container .box .links:hover i{
+  padding-right: 1.5rem;
+}
+.footer .box-container .box .email{
+  padding: 0.3rem;
+  border-radius:5px;
+  background: #eee;
+  color: black;
+  text-transform: none;
+  margin-left: 0.5rem
+  
+}
+input[type="submit"]{
+  border-radius: 5px;
+  padding: 5px;
+  background-color: blueviolet;
+  color: white;
+}
+input[type="submit"]:hover{
+  background-color: yellow;
+  color: black;
+}
+  
